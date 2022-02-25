@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+:root {
+  --boder-color: #144fc5;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  margin-bottom: 40px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400px;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--boder-color);
+  color: var(--boder-color);
+  border-radius: 0 0 40px 40px;
+  height: 331px;
+  width: 151px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  padding: 0 2px;
+  transition: 0.3s ease;
+  word-break: break-all;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: center;
+  justify-content: center;
+}
+
+.remained {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 10px 5px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    flex-direction: row;
+  }
+
+  .goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .drinked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+}
