@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  z-index: 10;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: 0.4s ease-in;
+  font-family: "Dongle", sans-serif;
+}
+
+header a:hover {
+  box-shadow: rgba(5, 1, 1, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+header a i {
+  font-size: 18px;
+}

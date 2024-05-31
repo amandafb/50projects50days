@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Increment Counter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div class="counter-container">
+  <body>
+    <header>
+      <a href="../index.html">
+        <i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Home
+      </a>
+    </header>
+    <main>
+      <div class="counter-container">
         <i class="fab fa-twitter fa-3x"></i>
         <div class="counter" data-target="1200"></div>
         <span>Twitter Followers</span>
-    </div>
-    <div class="counter-container">
+      </div>
+      <div class="counter-container">
         <i class="fab fa-youtube fa-3x"></i>
         <div class="counter" data-target="5000"></div>
         <span>YouTube Subscribe</span>
-    </div>
-    <div class="counter-container">
+      </div>
+      <div class="counter-container">
         <i class="fab fa-facebook fa-3x"></i>
         <div class="counter" data-target="7500"></div>
         <span>Facebook Fans</span>
-    </div>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
